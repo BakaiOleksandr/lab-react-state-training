@@ -1,10 +1,12 @@
-import { useState } from "react"
+import {useState} from 'react';
 
-function LikeButton({initialCount=null}) {
-    const [likesCount,setCount]=useState(initialCount)
+function LikeButton({initialCount = 0}) {
+  const [likesCount, setCount] = useState(initialCount);
 
   return (
-    <button className="like-btn" onClick={()=>setCount(likesCount+1)}>{likesCount} Likes</button>
-  )
+    <button className="like-btn" onClick={() => setCount(likesCount + 1)}>
+      {likesCount} Likes
+    </button>
+  );
 }
-export default LikeButton
+export default LikeButton;

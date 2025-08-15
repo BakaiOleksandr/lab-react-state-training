@@ -1,10 +1,10 @@
 import { useState } from "react"
 
-function LikeButton({initialCount=0}) {
+function LikeButton({initialCount=null}) {
     const [likesCount,setCount]=useState(initialCount)
 
   return (
-    <button onClick={()=>setCount(likesCount+1)}>{likesCount} Likes</button>
+    <button className="like-btn" onClick={()=>setCount(likesCount+1)}>{likesCount} Likes</button>
   )
 }
 export default LikeButton

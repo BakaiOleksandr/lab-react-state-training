@@ -3,16 +3,16 @@ import LikeButton from './LikeButton';
 
 function DiscoButton() {
   const styleColors = ['purple', 'blue', 'green', 'yellow', 'orange', 'red'];
-  const [index, setIndex] = useState(0);
+  const [color, setColor] = useState(0);
 
   const nextColor = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % styleColors.length);
+    setColor((index) => (index >= styleColors.length - 1 ? 0 : index + 1));
   };
 
   return (
     <LikeButton
       style={{
-        backgroundColor: styleColors[index],
+        backgroundColor: styleColors[color],
         fontSize: '20px',
         padding: '10px',
       }}

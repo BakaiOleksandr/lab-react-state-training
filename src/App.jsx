@@ -3,7 +3,7 @@ import LikeButton from './components/LikeButton';
 import Counter from './components/Counter';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
-
+import DiscoButton from './components/DiscoButton';
 function App() {
   return (
     <div className="App">
@@ -12,6 +12,7 @@ function App() {
       <Counter />
       <ClickablePicture />
       <Dice />
+      <DiscoButton />
     </div>
   );
 }

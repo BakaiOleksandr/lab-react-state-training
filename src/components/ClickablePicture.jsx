@@ -6,15 +6,18 @@ function ClickablePicture() {
   const [withoutGlass, setPicture] = useState(false);
 
   return (
-    <img
-      style={{cursor: 'pointer'}}
-      src={withoutGlass ? maxenceglasses : maxence}
-      onClick={() => {
-        setPicture(!withoutGlass);
-        console.log(withoutGlass);
-      }}
-      alt="image"
-    />
+    <div className="margin">
+      <img
+        className="click-picture"
+        style={{cursor: 'pointer'}}
+        src={withoutGlass ? maxenceglasses : maxence}
+        onClick={() => {
+          setPicture(!withoutGlass);
+          console.log(withoutGlass);
+        }}
+        alt="image"
+      />
+    </div>
   );
 }
 

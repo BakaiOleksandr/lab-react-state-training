@@ -54,3 +54,9 @@ p {
     0px 1px 1px rgba(81, 41, 10, 0.15);
   transform: translateY(0.125rem);
 }
+.margin {
+  margin: 1rem;
+}
+.margin img {
+  width: 29rem;
+}
